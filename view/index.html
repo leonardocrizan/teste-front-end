@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__topBar">
+        <div class="header__topBar-wrapper">
+          <div class="header__topBar-item">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.125 8.95833V4.375C3.125 4.20924 3.19085 4.05027 3.30806 3.93306C3.42527 3.81585 3.58424 3.75 3.75 3.75H16.25C16.4158 3.75 16.5747 3.81585 16.6919 3.93306C16.8092 4.05027 16.875 4.20924 16.875 4.375V8.95833C16.875 15.522 11.3042 17.6966 10.1919 18.0654C10.0675 18.1082 9.93246 18.1082 9.80811 18.0654C8.69578 17.6966 3.125 15.522 3.125 8.95833Z"
+                stroke="#9F9F9F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M13.4375 8.125L8.85414 12.5L6.5625 10.3125"
+                stroke="#9F9F9F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span>Compra <strong>100% segura</strong></span>
+          </div>
+
+          <div class="header__topBar-item">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.75 9.375H13.75V6.25H17.0769C17.2018 6.25 17.3238 6.28743 17.4272 6.35746C17.5307 6.42749 17.6108 6.5269 17.6572 6.64288L18.75 9.375Z"
+                stroke="#9F9F9F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M1.25 11.25H13.75"
+                stroke="#9F9F9F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M14.6875 16.875C15.723 16.875 16.5625 16.0355 16.5625 15C16.5625 13.9645 15.723 13.125 14.6875 13.125C13.652 13.125 12.8125 13.9645 12.8125 15C12.8125 16.0355 13.652 16.875 14.6875 16.875Z"
+                stroke="#9F9F9F"
+                stroke-width="2"
+                stroke-miterlimit="10"
+              />
+              <path
+                d="M5.3125 16.875C6.34803 16.875 7.1875 16.0355 7.1875 15C7.1875 13.9645 6.34803 13.125 5.3125 13.125C4.27697 13.125 3.4375 13.9645 3.4375 15C3.4375 16.0355 4.27697 16.875 5.3125 16.875Z"
+                stroke="#9F9F9F"
+                stroke-width="2"
+                stroke-miterlimit="10"
+              />
+              <path
+                d="M12.8125 15H7.1875"
+                stroke="#9F9F9F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M3.4375 15H1.875C1.70924 15 1.55027 14.9342 1.43306 14.8169C1.31585 14.6997 1.25 14.5408 1.25 14.375V5.625C1.25 5.45924 1.31585 5.30027 1.43306 5.18306C1.55027 5.06585 1.70924 5 1.875 5H13.75V13.3762"
+                stroke="#9F9F9F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M13.75 13.3762V9.375H18.75V14.375C18.75 14.5408 18.6842 14.6997 18.5669 14.8169C18.4497 14.9342 18.2908 15 18.125 15H16.5625"
+                stroke="#9F9F9F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span><strong>Frete grátis</strong> acima de R$ 200</span>
+          </div>
+
+          <div class="header__topBar-item">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.5 4.375H2.5C2.15482 4.375 1.875 4.65482 1.875 5V15C1.875 15.3452 2.15482 15.625 2.5 15.625H17.5C17.8452 15.625 18.125 15.3452 18.125 15V5C18.125 4.65482 17.8452 4.375 17.5 4.375Z"
+                stroke="#9F9F9F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M13.1245 13.125H15.6245"
+                stroke="#9F9F9F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M9.37445 13.125H10.6245"
+                stroke="#9F9F9F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M1.87445 7.56653H18.1244"
+                stroke="#9F9F9F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span><strong>Parcele</strong> suas compras</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__middleBar">
+        <div class="header__middleBar-wrapper">
+          <div class="header__logo">
+            <img src="../assets/images/logo.png" alt="Logo cãoselheiro" />
+          </div>
+  
+          <div class="header__searchBar">
+            <input type="text" placeholder="O que você está buscando?" />
+          </div>
+  
+          <div class="header__usersOptions">
+            <svg
+              width="26"
+              height="21"
+              viewBox="0 0 26 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21.8897 0.517646V0.517925H21.8537H21.8178H21.7818H21.7459H21.71H21.674H21.6381H21.6021H21.5662H21.5303H21.4943H21.4584H21.4224H21.3865H21.3505H21.3146H21.2787H21.2427H21.2068H21.1708H21.1349H21.0989H21.063H21.027H20.9911H20.9551H20.9192H20.8833H20.8473H20.8114H20.7754H20.7395H20.7035H20.6676H20.6316H20.5957H20.5597H20.5238H20.4878H20.4519H20.4159H20.38H20.344H20.3081H20.2721H20.2362H20.2002H20.1643H20.1283H20.0923H20.0564H20.0204H19.9845H19.9485H19.9126H19.8766H19.8407H19.8047H19.7688H19.7328H19.6968H19.6609H19.6249H19.589H19.553H19.5171H19.4811H19.4452H19.4092H19.3732H19.3373H19.3013H19.2654H19.2294H19.1934H19.1575H19.1215H19.0856H19.0496H19.0136H18.9777H18.9417H18.9058H18.8698H18.8338H18.7979H18.7619H18.7259H18.69H18.654H18.6181H18.5821H18.5461H18.5102H18.4742H18.4382H18.4023H18.3663H18.3303H18.2944H18.2584H18.2225H18.1865H18.1505H18.1146H18.0786H18.0426H18.0067H17.9707H17.9347H17.8988H17.8628H17.8268H17.7909H17.7549H17.7189H17.6829H17.647H17.611H17.575H17.5391H17.5031H17.4671H17.4312H17.3952H17.3592H17.3233H17.2873H17.2513H17.2153H17.1794H17.1434H17.1074H17.0715H17.0355H16.9995H16.9635H16.9276H16.8916H16.8556H16.8196H16.7837H16.7477H16.7117H16.6758H16.6398H16.6038H16.5678H16.5319H16.4959H16.4599H16.4239H16.388H16.352H16.316H16.28H16.2441H16.2081H16.1721H16.1361H16.1002H16.0642H16.0282H15.9922H15.9562H15.9203H15.8843H15.8483H15.8123H15.7764H15.7404H15.7044H15.6684H15.6325H15.5965H15.5605H15.5245H15.4885H15.4526H15.4166H15.3806H15.3446H15.3086H15.2727H15.2367H15.2007H15.1647H15.1287H15.0928H15.0568H15.0208H14.9848H14.9488H14.9129H14.8769H14.8409H14.8049H14.7689H14.733H14.697H14.661H14.625H14.589H14.5531H14.5171H14.4811H14.4451H14.4091H14.3731H14.3372H14.3012H14.2652H14.2292H14.1932H14.1572H14.1213H14.0853H14.0493H14.0133H13.9773H13.9413H13.9054H13.8694H13.8334H13.7974H13.7614H13.7254H13.6895H13.6535H13.6175H13.5815H13.5455H13.5095H13.4736H13.4376H13.4016H13.3656H13.3296H13.2936H13.2576H13.2217H13.1857H13.1497H13.1137H13.0777H13.0417H13.0058H12.9698H12.9338H12.8978H12.8618H12.8258H12.7898H12.7539H12.7179H12.6819H12.6459H12.6099H12.5739H12.5379H12.5019H12.466H12.43H12.394H12.358H12.322H12.286H12.25H12.2141H12.1781H12.1421H12.1061H12.0701H12.0341H11.9981H11.9622H11.9262H11.8902H11.8542H11.8182H11.7822H11.7462H11.7102H11.6743H11.6383H11.6023H11.5663H11.5303H11.4943H11.4583H11.4223H11.3864H11.3504H11.3144H11.2784H11.2424H11.2064H11.1704H11.1344H11.0985H11.0625H11.0265H10.9905H10.9545H10.9185H10.8825H10.8465H10.8106H10.7746H10.7386H10.7026H10.6666H10.6306H10.5946H10.5587H10.5227H10.4867H10.4507H10.4147H10.3787H10.3427H10.3067H10.2708H10.2348H10.1988H10.1628H10.1268H10.0908H10.0548H10.0188H9.98286H9.94687H9.91088H9.87489H9.83891H9.80292H9.76693H9.73095H9.69496H9.65897H9.62299H9.587H9.55101H9.51503H9.47904H9.44305H9.40707H9.37108H9.33509H9.29911H9.26312H9.22713H9.19115H9.15516H9.11917H9.08319H9.0472H9.01122H8.97523H8.93924H8.90326H8.86727H8.83129H8.7953H8.75931H8.72333H8.68734H8.65136H8.61537H8.57939H8.5434H8.50742H8.47143H8.43545H8.39946H8.36348H8.32749H8.29151H8.25552H8.21954H8.18355H8.14757H8.11158H8.0756H8.03961H8.00363H7.96764H7.93166H7.89568H7.85969H7.82371H7.78773H7.75174H7.71576H7.67977H7.64379H7.60781H7.57182H7.53584H7.49986H7.46387H7.42789H7.39191H7.35593H7.31994H7.28396H7.24798H7.212H7.17601H7.14003H7.10405H7.06807H7.03209H6.9961H6.96012H6.92414H6.88816H6.85218H6.8162H6.78022H6.74424H6.70825H6.67227H6.63629H6.60031H6.56433H6.52835H6.49237H6.45639H6.42041H6.38443H6.34845H6.31247H6.27649H6.24051H6.20454H6.16856H6.13258H6.0966H6.06062H6.02464H5.98866H5.95269H5.91671H5.88073H5.84475H5.80877H5.7728H5.73682H5.70084H5.66487H5.62889H5.59291H5.55694H5.52096H5.48498H5.44901H5.41303H5.37705H5.34108H5.3051H5.26913H5.23315H5.19718H5.1612H5.12523H5.08925H5.05328H5.01731H4.98133H4.94536H4.90938H4.87341H4.83744H4.80146H4.76549H4.72952H4.69354H4.65757H4.6216H4.58563H4.54966H4.51368H4.47771H4.44174H4.40577H4.3698H4.33383H4.29786H4.26189H4.22592H4.18995H4.15398H4.11801H4.08204H4.04607H4.0101H3.97413H3.93816H3.90219H3.86622H3.83025H3.79429H3.75832H3.72235H3.68638H3.65042H3.61445H3.57848H3.54251H3.50655H3.47076H3.47058V0.617925C3.16315 0.61677 2.86844 0.799486 2.78676 1.04189L21.8897 0.517646ZM21.8897 0.517646L21.8971 0.518204C22.1869 0.539882 22.4642 0.705291 22.5759 0.945621L22.5759 0.945617L22.5764 0.946748L25.0469 6.4399C25.0469 6.43995 25.0469 6.44001 25.047 6.44006C25.0813 6.51581 25.0995 6.59713 25.0999 6.67915V6.67968V9.85406C25.1029 10.0446 24.9993 10.2174 24.8527 10.339C24.7051 10.4614 24.5049 10.5404 24.2941 10.5404C24.0832 10.5404 23.883 10.4614 23.7354 10.339C23.5888 10.2174 23.4852 10.0446 23.4882 9.85406V7.35699M21.8897 0.517646L23.4882 7.35699M23.4882 7.35699H2.51176V18.9918H23.4882V13.4187H14.8647L14.8647 14.762L14.8647 14.7625C14.8635 15.0234 14.6575 15.2264 14.4237 15.3318C14.1867 15.4386 13.884 15.4641 13.6382 15.3381L13.6376 15.3378L9.75528 13.3172C9.28483 13.0724 9.28483 12.4105 9.75528 12.1656L13.6365 10.1456C13.6367 10.1455 13.6369 10.1454 13.6371 10.1453C13.794 10.0613 13.9852 10.0255 14.1682 10.044L14.1682 10.044L14.1696 10.0442C14.3591 10.0662 14.5317 10.1509 14.6573 10.2705C14.7824 10.3895 14.8665 10.5491 14.8647 10.7214M23.4882 7.35699L0.899998 6.67991M14.8647 10.7214V10.7208H14.7647L14.8647 10.722C14.8647 10.7218 14.8647 10.7216 14.8647 10.7214ZM14.8647 10.7214V12.0641M14.8647 12.0641H24.2941C24.503 12.0641 24.7016 12.1416 24.8489 12.262C24.9954 12.3819 25.0999 12.5523 25.0999 12.7414V19.6691C25.0999 19.8582 24.9954 20.0287 24.8489 20.1485C24.7016 20.269 24.503 20.3464 24.2941 20.3465H1.70588C1.49695 20.3464 1.29835 20.269 1.15105 20.1485C1.0045 20.0287 0.900023 19.8582 0.899998 19.6692V6.67991M14.8647 12.0641V12.1641L14.7647 12.0641H14.8647ZM0.899998 6.67991V6.67968H0.999998L0.899998 6.67991ZM23.1246 6.00237L21.2625 1.87254H14.1588V6.00237H23.1246ZM12.547 1.87254H4.08395L2.75844 6.00237H12.547V1.87254ZM13.2529 13.5505V11.9323L11.7048 12.7414L13.2529 13.5505Z"
+                fill="#9F9F9F"
+                stroke="#9F9F9F"
+                stroke-width="0.2"
+              />
+            </svg>
+  
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 27C16 27 3.5 20 3.5 11.5C3.50025 9.99768 4.02082 8.5418 4.97318 7.37991C5.92555 6.21801 7.25093 5.42181 8.72399 5.12669C10.197 4.83156 11.7269 5.05572 13.0533 5.76105C14.3798 6.46638 15.421 7.60935 16 8.99564L16 8.99565C16.579 7.60936 17.6202 6.46639 18.9467 5.76106C20.2731 5.05572 21.8029 4.83156 23.276 5.12669C24.7491 5.42181 26.0745 6.21801 27.0268 7.3799C27.9792 8.5418 28.4997 9.99768 28.5 11.5C28.5 20 16 27 16 27Z"
+                stroke="#9F9F9F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                stroke="#9F9F9F"
+                stroke-width="2"
+                stroke-miterlimit="10"
+              />
+              <path
+                d="M16 20C18.7614 20 21 17.7614 21 15C21 12.2386 18.7614 10 16 10C13.2386 10 11 12.2386 11 15C11 17.7614 13.2386 20 16 20Z"
+                stroke="#9F9F9F"
+                stroke-width="2"
+                stroke-miterlimit="10"
+              />
+              <path
+                d="M7.97491 24.9218C8.72818 23.4408 9.87656 22.1971 11.2929 21.3284C12.7093 20.4598 14.3385 20 16 20C17.6616 20 19.2907 20.4598 20.7071 21.3284C22.1235 22.1971 23.2719 23.4407 24.0251 24.9217"
+                stroke="#9F9F9F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M23 23H8.72727L5.2402 3.82112C5.19831 3.5907 5.07688 3.3823 4.89708 3.23225C4.71728 3.08219 4.49052 3 4.25633 3H2"
+                stroke="#9F9F9F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M10 28C11.3807 28 12.5 26.8807 12.5 25.5C12.5 24.1193 11.3807 23 10 23C8.61929 23 7.5 24.1193 7.5 25.5C7.5 26.8807 8.61929 28 10 28Z"
+                stroke="#9F9F9F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M23 28C24.3807 28 25.5 26.8807 25.5 25.5C25.5 24.1193 24.3807 23 23 23C21.6193 23 20.5 24.1193 20.5 25.5C20.5 26.8807 21.6193 28 23 28Z"
+                stroke="#9F9F9F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M7.81818 18H23.5127C23.981 18 24.4346 17.8356 24.7942 17.5355C25.1538 17.2354 25.3966 16.8186 25.4804 16.3578L27 8H6"
+                stroke="#9F9F9F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__subMenu">
+        <div class="header__subMenu-wrapper">
+            <ul class="header__subMenu-list">
+              <li class="header__subMenu-item">
+                <span class="header__subMenu-item--text">Brincar</span>
+              </li>
+    
+              <li class="header__subMenu-item">
+                <span class="header__subMenu-item--text">Morder</span>
+              </li>
+    
+              <li class="header__subMenu-item">
+                <span class="header__subMenu-item--text">Comer</span>
+              </li>
+    
+              <li class="header__subMenu-item">
+                <span class="header__subMenu-item--text">Passear</span>
+              </li>
+    
+              <li class="header__subMenu-item">
+                <span class="header__subMenu-item--text">Casa e Conforto</span>
+              </li>
+    
+              <li class="header__subMenu-item">
+                <span class="header__subMenu-item--text">Educação</span>
+              </li>
+    
+              <li class="header__subMenu-item">
+                <span class="header__subMenu-item--text spotlight">Ofertas</span>
+              </li>
+    
+              <li class="header__subMenu-item">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.52571 15.3137C3.54519 15.3959 3.58109 15.4732 3.63126 15.5412C3.68142 15.6091 3.7448 15.6662 3.8176 15.7089C3.89039 15.7517 3.97108 15.7793 4.05483 15.7901C4.13857 15.8009 4.22363 15.7947 4.30489 15.7717C8.03061 14.743 11.9654 14.7426 15.6913 15.7706C15.7725 15.7935 15.8576 15.7998 15.9413 15.789C16.025 15.7782 16.1056 15.7506 16.1784 15.7079C16.2512 15.6651 16.3146 15.6081 16.3647 15.5402C16.4149 15.4723 16.4508 15.395 16.4703 15.3129L18.4616 6.8506C18.4883 6.73732 18.4828 6.61884 18.4457 6.50851C18.4087 6.39818 18.3416 6.30039 18.252 6.22615C18.1623 6.1519 18.0538 6.10415 17.9385 6.08828C17.8232 6.07241 17.7057 6.08904 17.5994 6.13631L13.6475 7.89269C13.5048 7.95611 13.3436 7.96382 13.1955 7.91429C13.0474 7.86476 12.9232 7.76159 12.8474 7.62508L10.5464 3.48334C10.4923 3.38591 10.4131 3.30472 10.317 3.2482C10.2209 3.19167 10.1115 3.16187 10 3.16187C9.88857 3.16187 9.77914 3.19167 9.68308 3.2482C9.58701 3.30472 9.50781 3.38591 9.45368 3.48334L7.15272 7.62508C7.07688 7.76159 6.95269 7.86476 6.8046 7.91429C6.6565 7.96381 6.49523 7.95611 6.35253 7.89269L2.40008 6.13604C2.29375 6.08878 2.17634 6.07215 2.06107 6.08801C1.94579 6.10386 1.83724 6.15158 1.74762 6.2258C1.658 6.30001 1.59088 6.39777 1.55381 6.50806C1.51674 6.61836 1.51119 6.73681 1.5378 6.85008L3.52571 15.3137Z"
+                    stroke="#9F9F9F"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span class="header__subMenu-item--text">Coleção de outono</span>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="content__topBanner">
+        <div class="content__topBanner-images">
+          <img
+          src="../assets/images/banner_images.png"
+          alt="As melhores guias para seus passeio com o Pet."
+          />
+          <p class="content__topBanner-text">
+            As melhores guias para os melhores passeios.
+          </p>
+          <a href="#">
+            <button class="content__topBanner-button">Confira</button>
+          </a>
+        </div>
+
+        <div class="content__topBanner-images">
+          <img
+          src="../assets/images/banner_images.png"
+          alt="As melhores guias para seus passeio com o Pet."
+          />
+          <p class="content__topBanner-text">
+            As melhores guias para os melhores passeios.
+          </p>
+          <a href="#">
+            <button class="content__topBanner-button">Confira</button>
+          </a>
+        </div>
+
+        <div class="content__topBanner-images">
+          <img
+          src="../assets/images/banner_images.png"
+          alt="As melhores guias para seus passeio com o Pet."
+          />
+          <p class="content__topBanner-text">
+            As melhores guias para os melhores passeios.
+          </p>
+          <a href="#">
+            <button class="content__topBanner-button">Confira</button>
+          </a>
+        </div>
+      </section>
+
+      <section class="content__category">
+        <h2 class="content__title">Categorias</h2>
+
+        <div class="content__category-container">
+          <div class="content__category-item">
+            <img
+              src="../assets/images/dog-category1.png"
+              alt="Cachorro com a sua bolinha de brinquedo."
+            />
+            <p>Brinquedos</p>
+          </div>
+
+          <div class="content__category-item">
+            <img
+              src="../assets/images/dog-category2.png"
+              alt="Cachorro com o seu petisco favorito."
+            />
+            <p>Petiscos</p>
+          </div>
+
+          <div class="content__category-item">
+            <img
+              src="../assets/images/dog-category3.png"
+              alt="Cachorro em sua coleira de passeio."
+            />
+            <p>Guias</p>
+          </div>
+
+          <div class="content__category-item">
+            <img
+              src="../assets/images/dog-category4.png"
+              alt="Cachorro tomando seu banho. "
+            />
+            <p>Higiene</p>
+          </div>
+          <div class="content__category-item">
+            <img
+              src="../assets/images/dog-category1.png"
+              alt="Cachorro com a sua bolinha de brinquedo."
+            />
+            <p>Brinquedos</p>
+          </div>
+
+          <div class="content__category-item">
+            <img
+              src="../assets/images/dog-category2.png"
+              alt="Cachorro com o seu petisco favorito."
+            />
+            <p>Petiscos</p>
+          </div>
+
+          <div class="content__category-item">
+            <img
+              src="../assets/images/dog-category3.png"
+              alt="Cachorro em sua coleira de passeio."
+            />
+            <p>Guias</p>
+          </div>
+
+          <div class="content__category-item">
+            <img
+              src="../assets/images/dog-category4.png"
+              alt="Cachorro tomando seu banho. "
+            />
+            <p>Higiene</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content__shelf">
+        <div class="content__shelf-header">
+          <h2 class="content__title">Meu Cachorro...</h2>
+
+          <div class="content__shelf-filter">
+            <div class="content__shelf-filter--prev"></div>
+            <div class="content__shelf-list">
+              <div class="content__shelf-item agitado">
+                <span>É agitado</span>
+              </div>
+  
+              <div class="content__shelf-item morde">
+                <span>Morde</span>
+              </div>
+  
+              <div class="content__shelf-item late">
+                <span>Late muito</span>
+              </div>
+  
+              <div class="content__shelf-item ansioso">
+                <span>É Ansioso</span>
+              </div>
+  
+              <div class="content__shelf-item estressado">
+                <span>É estressado</span>
+              </div>
+            </div>
+            <div class="content__shelf-filter--next"></div>
+          </div>
+        </div>
+
+        <div class="content__shelf-productList"></div>
+      </section>
+
+      <section class="content__shelf-modal">
+        
+      </section>
+
+      <section class="content__brands">
+        <div class="content__brands-header">
+          <h2 class="content__title">Principais marcas</h2>
+          <a href="#">Ver todos</a>
+        </div>
+
+        <div class="content__brands-container">
+          <div class="content__brands-images">
+            <img src="../assets/images/topBrands1.png" alt="Marca Buddy toys and care"/>
+          </div>
+          <div class="content__brands-images">
+            <img src="../assets/images/topBrands2.png" alt="Marca Pet Games." />
+          </div>
+          <div class="content__brands-images">
+            <img src="../assets/images/topBrands3.png" alt="Marca Kong." />
+          </div>
+          <div class="content__brands-images">
+            <img src="../assets/images/topBrands1.png" alt="Marca Buddy toys and care"/>
+          </div>
+          <div class="content__brands-images">
+            <img src="../assets/images/topBrands2.png" alt="Marca Pet Games." />
+          </div>
+          <div class="content__brands-images">
+            <img src="../assets/images/topBrands3.png" alt="Marca Kong." />
+          </div>
+          <div class="content__brands-images">
+            <img src="../assets/images/topBrands1.png" alt="Marca Buddy toys and care"/>
+          </div>
+          <div class="content__brands-images">
+            <img src="../assets/images/topBrands2.png" alt="Marca Pet Games." />
+          </div>
+          <div class="content__brands-images">
+            <img src="../assets/images/topBrands3.png" alt="Marca Kong." />
+          </div>
+        </div>
+      </section>
+
+      <section class="content__extras">
+        <div class="content__extras-partners">
+          <div class="content__extras-partners--item">
+            <img
+              src="../assets/images/partners.png"
+              alt="Parcerias para seu pet."
+            />
+            <h2>Parceiros</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur</p>
+            <a href="#">
+              <button>Confira</button>
+            </a>
+          </div>
+
+          <div class="content__extras-partners--item">
+            <img
+              src="../assets/images/partners.png"
+              alt="Parcerias para seu pet."
+            />
+            <h2>Parceiros</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur</p>
+            <a href="#">
+              <button>Confira</button>
+            </a>
+          </div>
+
+          <div class="content__extras-partners--item">
+            <img
+              src="../assets/images/partners.png"
+              alt="Parcerias para seu pet."
+            />
+            <h2>Parceiros</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur</p>
+            <a href="#">
+              <button>Confira</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="content__extras-signature">
+          <div class="content__extras-signature--item">
+            <div class="content__extras-signature--content">
+              <h2>Assinatura Cãoselheiro</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
+                adipiscing quis non sed.
+              </p>
+              <a href="#">
+                <button>Saiba mais</button>
+              </a>
+            </div>
+            <img
+              src="../assets/images/signature.png"
+              alt="Assinaturas para o seu cão."
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="content__blog">
+        <h2 class="content__title">Confira o nosso Blog</h2>
+
+        <div class="content__blog-container">
+          <div class="content__blog-item">
+            <img
+              src="../assets/images/blog-dog1.png"
+              alt="Melhor amigo do homem."
+            />
+            <div class="content__blog-content">
+              <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur elit adipiscing
+                dignissim posuere vitae.
+              </p>
+              <button class="content__button">Ler artigo</button>
+            </div>
+          </div>
+
+          <div class="content__blog-item">
+            <img
+              src="../assets/images/blog-dog2.png"
+              alt="Cachorro e sua dona."
+            />
+            <div class="content__blog-content">
+              <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur elit adipiscing
+                dignissim posuere vitae.
+              </p>
+              <button class="content__button">Ler artigo</button>
+            </div>
+          </div>
+
+          <div class="content__blog-item">
+            <img
+              src="../assets/images/blog-dog3.png"
+              alt="Cachorro e seu dono juntos."
+            />
+            <div class="content__blog-content">
+              <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur elit adipiscing
+                dignissim posuere vitae.
+              </p>
+              <button class="content__button">Ler artigo</button>
+            </div>
+          </div>
+
+          <div class="content__blog-item">
+            <img
+              src="../assets/images/blog-dog4.png"
+              alt="Cachorro e seu brinquedo favorito."
+            />
+            <div class="content__blog-content">
+              <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur elit adipiscing
+                dignissim posuere vitae.
+              </p>
+              <button class="content__button">Ler artigo</button>
+            </div>
+          </div>
+
+          <div class="content__blog-item">
+            <img
+              src="../assets/images/blog-dog1.png"
+              alt="Melhor amigo do homem."
+            />
+            <div class="content__blog-content">
+              <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur elit adipiscing
+                dignissim posuere vitae.
+              </p>
+              <button class="content__button">Ler artigo</button>
+            </div>
+          </div>
+
+          <div class="content__blog-item">
+            <img
+              src="../assets/images/blog-dog2.png"
+              alt="Cachorro e sua dona."
+            />
+            <div class="content__blog-content">
+              <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur elit adipiscing
+                dignissim posuere vitae.
+              </p>
+              <button class="content__button">Ler artigo</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content__instagram">
+        <div class="content__instagram-header">
+          <h2 class="content__title">Instagram</h2>
+          <a href="#">+Seguir</a>
+        </div>
+
+        <div class="content__instagram-container">
+          <div class="content__instagram-images">
+            <img
+              src="../assets/images/instagram1.png"
+              alt="Cachorro e seu pote de ração."
+            />
+          </div>
+          <div class="content__instagram-images">
+            <img
+              src="../assets/images/instagram2.png"
+              alt="Cachorro e seu brinquedo favorito."
+            />
+          </div>
+          <div class="content__instagram-images">
+            <img
+              src="../assets/images/instagram3.png"
+              alt="Cachorro e seu brinquedo de morder."
+            />
+          </div>
+          <div class="content__instagram-images">
+            <img
+              src="../assets/images/instagram1.png"
+              alt="Cachorro e seu pote de ração."
+            />
+          </div>
+          <div class="content__instagram-images">
+            <img
+              src="../assets/images/instagram2.png"
+              alt="Cachorro e seu brinquedo favorito."
+            />
+          </div>
+          <div class="content__instagram-images">
+            <img
+              src="../assets/images/instagram3.png"
+              alt="Cachorro e seu brinquedo de morder."
+            />
+          </div>
+          <div class="content__instagram-images">
+            <img
+              src="../assets/images/instagram1.png"
+              alt="Cachorro e seu pote de ração."
+            />
+          </div>
+          <div class="content__instagram-images">
+            <img
+              src="../assets/images/instagram2.png"
+              alt="Cachorro e seu brinquedo favorito."
+            />
+          </div>
+          <div class="content__instagram-images">
+            <img
+              src="../assets/images/instagram3.png"
+              alt="Cachorro e seu brinquedo de morder."
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="content__newsletter">
+        <img
+          src="../assets/images/dog-newsletter.png"
+          alt="Melhor amigo do homem."
+        />
+        <div class="content__newsletter-container">
+          <h2>Se inscreva para receber novidades e promoções</h2>
+
+          <div class="content__newsletter-data">
+            <div class="content__newsletter-data--name">
+              <input type="text" placeholder="Digite seu nome" />
+            </div>
+            <div class="content__newsletter-data--email">
+              <input type="email" placeholder="Digite seu e-mail" />
+            </div>
+            <button>Enviar</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__socialAndAbout">
+        <div class="footer__social">
+          <h2 class="footer__title">Nos siga nas nossas redes sociais</h2>
+          <div class="footer__socialMedias">
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_4922_882)">
+                <path
+                  d="M14.3167 3.56319H16.2775V0.151111C15.9392 0.104616 14.7758 0 13.4208 0C10.5936 0 8.65694 1.77668 8.65694 5.04211V8.04735H5.53711V11.8618H8.65694V21.4596H12.482V11.8627H15.4756L15.9509 8.04825H12.4811V5.42034C12.482 4.31785 12.7791 3.56319 14.3167 3.56319Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_4922_882">
+                  <rect width="21.479" height="21.4596" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+
+            <svg
+              width="23"
+              height="22"
+              viewBox="0 0 23 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_4922_878)">
+                <path
+                  d="M11.4877 5.35156C8.36548 5.35156 5.83778 7.87973 5.83778 10.9964C5.83778 14.1158 8.36824 16.6412 11.4877 16.6412C14.61 16.6412 17.1377 14.1131 17.1377 10.9964C17.1377 7.87698 14.6072 5.35156 11.4877 5.35156ZM11.4877 14.6603C9.46098 14.6603 7.82049 13.0204 7.82049 10.9964C7.82049 8.9724 9.46189 7.33248 11.4877 7.33248C13.5136 7.33248 15.155 8.9724 15.155 10.9964C15.1559 13.0204 13.5145 14.6603 11.4877 14.6603Z"
+                  fill="white"
+                />
+                <path
+                  d="M16.0224 0.0708134C13.9966 -0.0236032 8.97877 -0.0190199 6.95111 0.0708134C5.16933 0.15423 3.59766 0.584147 2.3306 1.85006C0.213015 3.96573 0.483676 6.81656 0.483676 10.9975C0.483676 15.2765 0.245127 18.0613 2.3306 20.1449C4.45643 22.2679 7.35113 21.9901 11.4863 21.9901C15.7288 21.9901 17.1931 21.9929 18.6932 21.4126C20.7328 20.6216 22.2724 18.8001 22.4228 15.5286C22.5183 13.5036 22.5128 8.49131 22.4228 6.46548C22.2412 2.60356 20.1667 0.26148 16.0224 0.0708134ZM19.229 18.7451C17.8409 20.1321 15.915 20.0083 11.4597 20.0083C6.8722 20.0083 5.03262 20.0761 3.69032 18.7314C2.14434 17.1941 2.42418 14.7256 2.42418 10.9828C2.42418 5.91823 1.90396 2.27081 6.99148 2.01048C8.16037 1.96923 8.50443 1.95548 11.4468 1.95548L11.4881 1.98298C16.3775 1.98298 20.2135 1.47148 20.4438 6.55348C20.4961 7.71306 20.508 8.0614 20.508 10.9966C20.5071 15.5267 20.5934 17.3756 19.229 18.7451Z"
+                  fill="white"
+                />
+                <path
+                  d="M17.3608 6.44774C18.0901 6.44774 18.6813 5.85716 18.6813 5.12865C18.6813 4.40014 18.0901 3.80957 17.3608 3.80957C16.6315 3.80957 16.0403 4.40014 16.0403 5.12865C16.0403 5.85716 16.6315 6.44774 17.3608 6.44774Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_4922_878">
+                  <rect
+                    width="22.0199"
+                    height="22"
+                    fill="white"
+                    transform="translate(0.473114)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+
+            <svg
+              width="23"
+              height="22"
+              viewBox="0 0 23 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_4922_876)">
+                <path
+                  d="M22.5128 5.43485L22.5403 5.61451C22.2743 4.67126 21.5559 3.94343 20.643 3.67851L20.6237 3.67393C18.9071 3.20826 11.9992 3.20826 11.9992 3.20826C11.9992 3.20826 5.10883 3.1991 3.37477 3.67393C2.44443 3.94343 1.72511 4.67126 1.46362 5.59526L1.45903 5.61451C0.817705 8.96126 0.813117 12.9827 1.48748 16.5659L1.45903 16.3844C1.72511 17.3277 2.44351 18.0555 3.35642 18.3204L3.37568 18.325C5.09048 18.7916 12.0001 18.7916 12.0001 18.7916C12.0001 18.7916 18.8896 18.7916 20.6246 18.325C21.5559 18.0555 22.2752 17.3277 22.5367 16.4037L22.5413 16.3844C22.833 14.8279 23 13.0368 23 11.2071C23 11.1402 23 11.0723 22.9991 11.0045C23 10.9422 23 10.8679 23 10.7937C23 8.9631 22.833 7.17193 22.5128 5.43485ZM9.7954 14.3467V7.66143L15.5444 11.0091L9.7954 14.3467Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_4922_876">
+                  <rect
+                    width="22.0199"
+                    height="22"
+                    fill="white"
+                    transform="translate(0.980103)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <div class="footer__about">
+          <h2 class="footer__title">Sobre O Cãoselheiro</h2>
+          <p>
+            Seja muito bem-vindo! O Cãoselheiro - a loja - é a loja online de
+            uma empresa que nasceu para contribuir para uma melhor qualidade de
+            vida dos cães e seus familiares humanos. Seus sócios são
+            profissionais de educação canina que trabalham seguindo metodologias
+            positivas de treinamento animal, encorajando e recompensando os
+            acertos de nossos amigos em seus processos de adestramento. Aqui
+            você encontrará apenas itens de qualidade comprovada e utilizados
+            pessoalmente por seus idealizadores. Fique à vontade!
+          </p>
+        </div>
+      </div>
+
+      <div class="footer__infos">
+        <div class="footer__infos-signAndPartners">
+          <a href="#">
+            <h2 class="footer__subtitle">Assinatura</h2>
+          </a>
+
+          <a href="#">
+            <h2 class="footer__subtitle">Parceiros</h2>
+          </a>
+        </div>
+        <div class="footer__infos-institutional">
+          <h2 class="footer__subtitle">Institucional</h2>
+          <ul class="footer__list">
+            <li class="footer__list-item"><a href="#">Quem somos</a></li>
+            <li class="footer__list-item">
+              <a href="#">Política de privacidade</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#">Política comercial</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#">Política de devolução</a>
+            </li>
+            <li class="footer__list-item"><a href="#">Regras de frete</a></li>
+          </ul>
+        </div>
+        <div class="footer__infos-sac">
+          <h2 class="footer__subtitle">Atendimento</h2>
+          <ul class="footer__list">
+            <li class="footer__list-item">Quem somos</li>
+            <li class="footer__list-item">
+              <a href="#">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.5832 11.9849V14.1099C15.584 14.3072 15.5436 14.5024 15.4646 14.6832C15.3855 14.8639 15.2696 15.0262 15.1243 15.1596C14.9789 15.2929 14.8073 15.3945 14.6204 15.4577C14.4335 15.5209 14.2355 15.5443 14.039 15.5266C11.8594 15.2897 9.76566 14.5449 7.92612 13.352C6.21467 12.2645 4.76365 10.8134 3.67612 9.10199C2.47902 7.25409 1.73404 5.15019 1.50154 2.96074C1.48384 2.76486 1.50712 2.56744 1.56989 2.38106C1.63267 2.19467 1.73357 2.02339 1.86616 1.87814C1.99876 1.73288 2.16015 1.61683 2.34006 1.53736C2.51996 1.45789 2.71445 1.41676 2.91112 1.41657H5.03612C5.37988 1.41319 5.71314 1.53492 5.97379 1.75907C6.23443 1.98323 6.40468 2.29451 6.45279 2.63491C6.54248 3.31495 6.70881 3.98267 6.94862 4.62532C7.04392 4.87885 7.06455 5.15439 7.00806 5.41928C6.95156 5.68417 6.82032 5.92732 6.62987 6.11991L5.73029 7.01949C6.73864 8.79283 8.20694 10.2611 9.98029 11.2695L10.8799 10.3699C11.0725 10.1795 11.3156 10.0482 11.5805 9.99172C11.8454 9.93523 12.1209 9.95585 12.3745 10.0512C13.0171 10.291 13.6848 10.4573 14.3649 10.547C14.709 10.5955 15.0232 10.7688 15.2478 11.034C15.4725 11.2991 15.5918 11.6375 15.5832 11.9849Z"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                (11) 97212-1314
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#">ocaoselheiro@ocaoselheiro.com.br</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#">Trabalhe conosco</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__paymentsAndSecurity">
+        <div class="footer__payment">
+          <h2 class="footer__subtitle">Formas de pagamento</h2>
+          <div class="footer__payment-container">
+            <div class="footer__payment-images">
+              <img
+                src="../assets/images/elo.png"
+                alt="Forma de pagamento com a bandeira Elo"
+              />
+            </div>
+            <div class="footer__payment-images">
+  
+              <img
+                src="../assets/images/visa.png"
+                alt="Forma de pagamento com a bandeira Visa"
+              />
+            </div>
+            <div class="footer__payment-images">
+  
+              <img
+                src="../assets/images/mastercard.png"
+                alt="Forma de pagamento com a bandeira Mastercard"
+              />
+            </div>
+            <div class="footer__payment-images">
+  
+              <img
+                src="../assets/images/boleto.png"
+                alt="Forma de pagamento utilizando boleto bancário."
+              />
+            </div>
+            <div class="footer__payment-images">
+  
+              <img
+                src="../assets/images/dinners-club.png"
+                alt="Forma de pagamento utilizando Dinners Club."
+              />
+            </div>
+            <div class="footer__payment-images">
+  
+              <img
+                src="../assets/images/american-express.png"
+                alt="Forma de pagamento utilizando American Express."
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__security">
+          <h2 class="footer__subtitle">Segurança</h2>
+          <img
+            src="../assets/images/lets-security.png"
+            alt="Logo da Let's Security."
+          />
+        </div>
+      </div>
+
+      <div class="footer__companyInfos">
+        <div class="footer__data">
+          <p>
+            O Cãoselheiro Comércio LTDA <br>
+            CNPJ: 30.324.633/0001-16  <br>
+            © Todos os direitos reservados. 2021
+          </p>
+        </div>
+
+        <div class="footer__developer">
+          <img
+            src="../assets/images/econverse-logo.png"
+            alt="Logo Econverse."
+            class="footer__developer-econverse"
+          />
+          <img src="../assets/images/vtex-logo.png" alt="Logo Vtex." class="footer__developer-vtex"/>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../assets/js/index.js"></script>
+  </body>
+</html>
